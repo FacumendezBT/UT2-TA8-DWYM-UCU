@@ -1,4 +1,3 @@
-const btn = document.getElementById('btn');
 const people = [
     {
         name: "Carly",
@@ -37,9 +36,12 @@ const people = [
     },
 ];
 
-btn.addEventListener('click', () => {
-    findTheOldest(people);
-});
+window.onload = () => {
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => {
+        findTheOldest(people);
+    });
+};
 
 
 /**
